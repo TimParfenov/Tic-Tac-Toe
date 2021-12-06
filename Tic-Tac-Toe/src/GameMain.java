@@ -72,8 +72,8 @@ public class GameMain extends JPanel implements MouseListener{
 				
 				//TODO: create the new GameMain panel and add it to the frame
 
-				JPanel GameMainPanel = new JPanel();
-				frame.add(GameMainPanel);
+				GameMain gamePanel = new GameMain();
+				frame.add(gamePanel);
 				
 				//TODO: set the default close operation of the frame to exit_on_close
 				frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);	
@@ -187,7 +187,7 @@ public class GameMain extends JPanel implements MouseListener{
 		}   
 		
 		//TODO: redraw the graphics on the UI          
-           
+           repaint();
 	}
 		
 	

@@ -13,13 +13,15 @@ public class Board {
 	public Board() {
 		
 	 //TODO: initialise the cells array using ROWS and COLS constants 
-//		!!!!!!!!
+		
+//		cells = new Cell[GameMain.ROWS] [GameMain.COLS];
+		cells = new Cell[3][3];
 
 		
 		for (int row = 0; row < GameMain.ROWS; ++row) {
 			for (int col = 0; col < GameMain.COLS; ++col) {
 				cells[row][col] = new Cell(row, col);
-				cells = new Cell[GameMain.ROWS] [GameMain.COLS];
+				
 			}
 		}
 	}
